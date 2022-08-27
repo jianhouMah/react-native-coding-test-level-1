@@ -3,7 +3,8 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import MainScreen from '../screens/MainScreen'
-import ContactUsScreen from '../screens/ContactUsScreen'
+import CatalogScreen from '../screens/CatalogScreen'
+import DetailScreen from '../screens/DetailScreen'
 
 const Stack = createStackNavigator ()
 
@@ -23,9 +24,14 @@ function MainStackNavigator() {
                     options={{ title: 'MainScreen', cardStyleInterpolator: forFade, animationEnabled: false }}
                 /> 
                   <Stack.Screen
-                    name='ContactUsScreen'
-                    component={ContactUsScreen}
-                    options={{ title: 'ContactUsScreen', cardStyleInterpolator: forFade, animationEnabled: false }}
+                    name='CatalogScreen'
+                    component={CatalogScreen}
+                    options={{ title: 'CatalogScreen', cardStyleInterpolator: forFade, animationEnabled: false }}
+                />    
+                 <Stack.Screen
+                    name='DetailScreen'
+                    component={DetailScreen}
+                    options={{ title: 'DetailScreen', cardStyleInterpolator: forFade, animationEnabled: false }}
                 />    
             </Stack.Navigator>
         </NavigationContainer>
