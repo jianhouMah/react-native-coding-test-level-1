@@ -58,4 +58,49 @@ export const touchStyle = StyleSheet.create({
   
 });
 
+export const flatListStyle = StyleSheet.create({
+
+  flatlists:{
+    marginTop: 25
+  }
+  
+});
+
+export const cardStyle = StyleSheet.create({
+
+  cards:{
+    height: 65, 
+    padding: 10
+  }
+  
+});
+
+export const headerStyle = StyleSheet.create({
+
+  headers:{
+    backgroundColor: 'gray', 
+    height: 80, 
+    elevation: 0, 
+    paddingTop: 20 
+  },
+  left:{
+    flex: 1 
+  },
+  body:{
+    flex: 1, 
+    alignItems: 'center'
+  },
+  right:{
+    flex: 1
+  },
+  title:{
+    textAlign: 'center', 
+    fontWeight: 'bold', 
+    fontSize: 15
+  },
+  text:{
+    fontSize: 25
+  }
+});
+
   

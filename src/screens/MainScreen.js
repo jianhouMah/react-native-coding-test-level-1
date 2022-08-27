@@ -14,7 +14,7 @@ import { viewStyle, buttonStyle } from '../utils/css/global_css/index';
 import { sWidth, sHeight } from '../utils/constant/phoneSize';
 
 
-class HomeScreen extends React.Component {
+class MainScreen extends React.Component {
  
 
     constructor(props) {
@@ -41,8 +41,8 @@ class HomeScreen extends React.Component {
         return (
            
             <View style={viewStyle.views}>
-                <Button style={buttonStyle.btn} onPress={() => { navigation.navigate('ContactUsScreen') }}>
-                    <Text style={buttonStyle.btnText}>{"Contact Us"}</Text>
+                <Button style={buttonStyle.btn} onPress={() => { navigation.navigate('CatalogScreen') }}>
+                    <Text style={buttonStyle.btnText}>{"View Catalog"}</Text>
                 </Button>
             </View>
         );
@@ -50,4 +50,4 @@ class HomeScreen extends React.Component {
     }
 }
 
-export default HomeScreen;
+export default MainScreen;
